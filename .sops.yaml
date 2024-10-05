@@ -1,0 +1,9 @@
+keys:
+  - &system age1r4s8ll77knct977mvfqzsay6mz5k7q8lmgs93ef6k7gvpkcy8qqqpck707
+  - &jcli age1xnh0dj36damgxjprlfg6q0trgjj4j5et98tf2k2c9n93zuzwvansndspm9
+creation_rules:
+  - path_regex: secrets.yaml$
+    key_groups:
+      - age:
+          - *jcli
+          - *system
